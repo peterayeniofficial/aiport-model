@@ -12,9 +12,12 @@ a2 = Airport.new("MDC", "Oslo")
 
 p1.flight_to_airport(a1, "02102019")
 p1.flight_to_airport(a2, "03102019")
-p2.flight_to_airport(a1, "02102019")
-p2.flight_to_airport(a2, "07102019")
-p2.flight_to_airport(a2, "31102019")
+p2.flight_to_airport(a2, "02102019")
+p2.flight_to_airport(a1, "07102019")
+p2.flight_to_airport(a1, "31102019")
+p2.flight_to_airport(a1, "07102019")
+p2.flight_to_airport(a1, "31102019")
+p1.flight_to_airport(a2, "03202019")
 
 a1.most_frequent_passenger
 a1.passengers
@@ -25,5 +28,5 @@ p1.all_cities_visited
 p1.flights
 a1.flight_on("123222")
 
-binding
+binding.pry
 0

@@ -30,9 +30,7 @@ class Airport
   end
 
   def most_frequent_passenger
-    all_pasengers = Flight.all.map {|airport| airport.passenger }
-    most = all_pasengers.max_by{|n| all_pasengers.count(n)}
+    most = passengers.max_by{|n| passengers.count(n)}
     most.name
-
   end
 end
